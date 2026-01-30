@@ -1,0 +1,51 @@
+--- File Management Report for: mixx ---
+Moved: CGLS_Sogeti_PrimaryTracks__15Dec25To17Apr26_CMRCET_HYD_NV.xlsx - Data & AI (T5).pdf -> Documents/
+Moved: CMR College of Engineering & Technology, Hyderabad.xlsx -> Documents/
+Moved: DaywiseCoverage (Foundation,T1,T5,T6A,T9) - LeftShiftProgram2026_NovelVista_1.0 (2) (1) (1).xlsx -> Documents/
+Moved: DaywiseCoverage (Foundation,T1,T5,T6A,T9) - LeftShiftProgram2026_NovelVista_1.0 (2) (1).xlsx -> Documents/
+Moved: IEEE - wordpaper (1).docx -> Documents/
+Moved: IEEE - wordpaper.docx -> Documents/
+Moved: Major Project paper (1).pdf -> Documents/
+Moved: Major Project paper team 8 (1).docx -> Documents/
+Moved: Major Project paper team 8 (2).docx -> Documents/
+Moved: MD Project.xlsx -> Documents/
+Moved: minor degree set 2.pdf -> Documents/
+Moved: Screenshot (197).png -> Images/
+Moved: Screenshot 2025-12-17 095045.png -> Images/
+Moved: Screenshot 2025-12-17 100923.png -> Images/
+Moved: Screenshot 2025-12-17 100945.png -> Images/
+Moved: Screenshot 2025-12-17 101013.png -> Images/
+Moved: Screenshot 2025-12-17 101028.png -> Images/
+Moved: Screenshot 2025-12-22 112548.png -> Images/
+Moved: Screenshot 2025-12-24 211910.png -> Images/
+Moved: Screenshot 2025-12-26 091944.png -> Images/
+Moved: Screenshot 2025-12-26 142125.png -> Images/
+Moved: Screenshot 2025-12-29 203407.png -> Images/
+Moved: Screenshot 2025-12-29 203444.png -> Images/
+Moved: Screenshot 2025-12-29 203509.png -> Images/
+Moved: Screenshot 2025-12-29 203538.png -> Images/
+Moved: Screenshot 2025-12-29 203610.png -> Images/
+Moved: Screenshot 2025-12-29 203642.png -> Images/
+Moved: Screenshot 2025-12-29 203706.png -> Images/
+Moved: Screenshot 2025-12-29 203734.png -> Images/
+Moved: Screenshot 2025-12-29 203752.png -> Images/
+Moved: Screenshot 2025-12-29 203814.png -> Images/
+Moved: Screenshot 2025-12-29 203842.png -> Images/
+Moved: Screenshot 2025-12-29 203928.png -> Images/
+Moved: Screenshot 2025-12-29 204002.png -> Images/
+Moved: Screenshot 2025-12-29 204015.png -> Images/
+Moved: Screenshot 2025-12-29 204036.png -> Images/
+Moved: Screenshot 2025-12-29 204115.png -> Images/
+Moved: Screenshot 2025-12-29 204139.png -> Images/
+Moved: Screenshot 2025-12-29 204834.png -> Images/
+Moved: Screenshot 2025-12-29 204923.png -> Images/
+Moved: Screenshot 2025-12-29 205003.png -> Images/
+Moved: Screenshot 2025-12-29 205037.png -> Images/
+Moved: Screenshot 2025-12-29 205106.png -> Images/
+Moved: Screenshot 2025-12-29 205214.png -> Images/
+Moved: Screenshot 2025-12-29 205240.png -> Images/
+Moved: Screenshot 2025-12-29 205357.png -> Images/
+Moved: Screenshot 2025-12-29 205433.png -> Images/
+Total files organized: 47
+Cleaned up text too
+
