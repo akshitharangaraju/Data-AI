@@ -1,0 +1,5 @@
+Hello, welcome to file handling in Python!
+This is your first file operation.
+Appending a new line to the file.
+Appending a new line to the file.
+Appending a new line to the file.
