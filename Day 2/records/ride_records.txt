@@ -1,0 +1,27 @@
+
+
+Customer   : Akki (A)
+Phone      : 8********1
+Driver     : A
+Pickup     : X
+Drop       : W
+Day        : Saturday
+Fare       : Rs.345.0
+Discount   : Rs.0
+Final Fare : Rs.295.0
+Promo      : Promo Applied
+Feedback   : 1 words
+Keywords   : None
+Status     : COMPLETED
+
+Customer   : Akki (A)
+Phone      : 8********7
+Driver     : Anny
+Pickup     : Cmr
+Drop       : Medchal
+Day        : Saturday
+Fare       : Rs.432.0
+Discount   : Rs.0
+Final Fare : Rs.382.0
+Promo      : Promo Applied
+Status     : COMPLETED
