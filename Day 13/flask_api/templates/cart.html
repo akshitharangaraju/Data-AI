@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="navbar">
+    <h2>Your Cart</h2>
+    <div>
+        <a href="/products">Products</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </div>
+</div>
+
+<div class="container" id="cart"></div>
+
+<script>
+const token = localStorage.getItem("token");
+
+if (!token) {
+    window.location.href = "/";
+}
+
+fetch("/api/cart", {
+    headers: { Authorization: "Bearer " + token }
+})
+.then(res => res.json())
+.then(data => {
+    let html = "";
+    data.cart.forEach(item => {
+        html += `
+        <div class="card">
+            <p>${item.product} × ${item.qty}</p>
+            <p>₹${item.total}</p>
+        </div>`;
+    });
+    html += `<h3>Total: ₹${data.cart_total}</h3>`;
+    html += `<a href="/checkout"><button>Checkout</button></a>`;
+    document.getElementById("cart").innerHTML = html;
+});
+
+function logout() {
+    localStorage.removeItem("token");
+    window.location.href = "/";
+}
+</script>
+
+</body>
+</html>

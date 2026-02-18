@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="navbar">
+    <h2>Products</h2>
+    <div>
+        <a href="/cart">Cart</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </div>
+</div>
+
+<div class="container products-grid" id="products"></div>
+
+<script>
+const token = localStorage.getItem("token");
+
+if (!token) {
+    window.location.href = "/";
+}
+
+fetch("/api/products", {
+    headers: { Authorization: "Bearer " + token }
+})
+.then(res => res.json())
+.then(data => {
+    let html = "";
+    data.forEach(p => {
+        html += `
+        <div class="card">
+            <h3>${p.name}</h3>
+            <p>₹${p.price}</p>
+            <button onclick="addToCart(${p.id})">Add to Cart</button>
+        </div>`;
+    });
+    document.getElementById("products").innerHTML = html;
+});
+
+function addToCart(id) {
+    fetch("/api/add_to_cart/" + id, {
+        method: "POST",
+        headers: {
+            "Authorization": "Bearer " + token,
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({quantity: 1})
+    }).then(() => {
+        window.location.href = "/products";
+    });
+}
+
+function logout() {
+    localStorage.removeItem("token");
+    window.location.href = "/";
+}
+</script>
+
+</body>
+</html>

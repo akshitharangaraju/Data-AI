@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="navbar">
+    <h2>Checkout</h2>
+    <div>
+        <a href="/products">Products</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </div>
+</div>
+
+<div class="center">
+    <div class="card">
+        <h3>Confirm Order</h3>
+
+        <button id="orderBtn" onclick="checkout()">Place Order</button>
+
+        <p id="successMsg" class="success" style="display:none;">
+            ✅ Order placed successfully!
+        </p>
+    </div>
+</div>
+
+<script>
+const token = localStorage.getItem("token");
+
+if (!token) {
+    window.location.href = "/";
+}
+
+function checkout() {
+    fetch("/api/checkout", {
+        method: "POST",
+        headers: { Authorization: "Bearer " + token }
+    })
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById("orderBtn").disabled = true;
+        document.getElementById("successMsg").style.display = "block";
+    });
+}
+
+function logout() {
+    localStorage.removeItem("token");
+    window.location.href = "/";
+}
+</script>
+
+</body>
+</html>
