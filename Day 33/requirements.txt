@@ -1,0 +1,7 @@
+python-docx
+sentence-transformers
+pinecone
+google-genai
+python-dotenv
+pypdf
+streamlit
